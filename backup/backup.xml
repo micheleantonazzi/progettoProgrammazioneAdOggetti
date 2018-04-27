@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cloud>
+    <users>
+        <user type="admin" email="ranzato@gmail.com" name="Francesco" lastName="Ranzato" password="12345"/>
+        <user type="standardUser" email="utente1@gmail.com" name="utente" lastName="1" password="12345"/>
+        <user type="premiumUser" email="utente2@gmail.com" name="utente" lastName="2" password="12345"/>
+    </users>
+    <tree>
+        <node name="ranzato@gmail.com" type="rootNode" sharedBy="" userName="Francesco Ranzato">
+            <node name="utente1@gmail.com" type="rootNode" sharedBy="" userName="utente 1">
+                <node name="cartella1" type="directoryNode" sharedBy="" userName="">
+                    <node name="cartella1" type="directoryNode" sharedBy="" userName="">
+                        <node name="fileinterno" type="fileNode" size="5678" sharedBy=""/>
+                    </node>
+                    <node name="cartella2" type="directoryNode" sharedBy="" userName=""/>
+                </node>
+                <node name="cartellaCondivisa" type="directoryNodeShared" sharedBy="utente 2" userName="">
+                    <node name="file1" type="fileNode" size="710934528" sharedBy=""/>
+                </node>
+                <node name="file1" type="fileNode" size="33" sharedBy=""/>
+            </node>
+            <node name="utente2@gmail.com" type="rootNode" sharedBy="" userName="utente 2">
+                <node name="cartella1" type="directoryNode" sharedBy="" userName="">
+                    <node name="file1" type="fileNode" size="710934528" sharedBy=""/>
+                </node>
+                <node name="cartella2" type="directoryNode" sharedBy="" userName=""/>
+            </node>
+        </node>
+    </tree>
+</cloud>
